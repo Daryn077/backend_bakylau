@@ -13,14 +13,14 @@ async def seed():
         await db.commit()
 
         author1 = Author(
-            first_name="George",
-            last_name="Orwell",
-            birth_year=1903,
+            first_name="Tlegen",
+            last_name="Tolstiy",
+            birth_year=2005,
         )
         author2 = Author(
-            first_name="Jane",
-            last_name="Austen",
-            birth_year=1775,
+            first_name="Make",
+            last_name="Doramchik",
+            birth_year=2006,
         )
 
         db.add_all([author1, author2])

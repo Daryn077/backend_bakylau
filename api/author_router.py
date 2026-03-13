@@ -2,7 +2,7 @@ from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from api.author_schemas import AuthorDetailSchema
-from business_logic.author_service import AuthorService
+from business_logic.authors.author_service import AuthorService
 from data_access.db.session import get_db
 
 router = APIRouter(prefix="/authors", tags=["Authors"])
